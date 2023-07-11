@@ -1,0 +1,23 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "webserver"
+  annotations:
+    kubernetes.io/change-cause: Change deployment strategy to Recreate.
+spec:
+  strategy:
+    type: Recreate
+  replicas: 8
+  selector:
+    matchLabels:
+      app: "web"
+  template:
+    metadata:
+      labels:
+        app: "web"
+    spec:
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd:dnsv2"
+        ports:
+        - containerPort: 80

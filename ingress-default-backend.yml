@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: default-backend
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: default-http-backend
+            port:
+              name: http
+        pathType: ImplementationSpecific

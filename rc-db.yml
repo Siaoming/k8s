@@ -1,0 +1,25 @@
+apiVersion: "v1"
+kind: "ReplicationController"
+metadata:
+  name: "database-rc"
+  labels:
+    rc: "db"
+spec:
+  replicas: 1
+  selector:
+    app: "db"
+  template:
+    metadata:
+      labels:
+        app: "db"
+    spec:
+      containers:
+      - name: "db-backend"
+        image: "eagle.example.com:5000/mysql"
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: redhat
+        ports:
+        - containerPort: 3306
+      imagePullSecrets:
+      - name: myregkey

@@ -1,0 +1,14 @@
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "webserver"
+  labels:
+    app: "web"
+  annotations:
+    k8s.v1.cni.cncf.io/networks: '[{ "name": macvlan-conf@eth1, "ips": "10.7.7.71" }]'
+spec:
+  containers:
+  - name: "apache-frontend"
+    image: "eagle.example.com:5000/httpd:webapp"
+    ports:
+    - containerPort: 80

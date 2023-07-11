@@ -1,0 +1,40 @@
+apiVersion: batch/v1beta1
+kind: Job
+metadata:
+  name: etcd-backup-now
+spec:
+  ttlSecondsAfterFinished: 10
+  template:
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: "eagle.example.com"
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      hostNetwork: true
+      restartPolicy: Never
+      volumes:
+      - name: etcd-certs
+        hostPath:
+          path: /etc/kubernetes/pki
+      - name: etcd-data
+        hostPath:
+          path: /backup/etcd
+          type: DirectoryOrCreate
+      containers:
+      - name: etcd-client
+        image: k8s.gcr.io/etcd:3.4.3-0
+        args:
+        - /bin/sh
+        - -ec
+        - ETCDCTL_API=3 etcdctl --cacert=/etc/kubernetes/pki/etcd/ca.crt
+          --cert=/etc/kubernetes/pki/apiserver-etcd-client.crt
+          --key=/etc/kubernetes/pki/apiserver-etcd-client.key
+          --endpoints https://127.0.0.1:2379
+          snapshot save /backup/etcd/etcd-$(date +%s).bak
+        volumeMounts:
+        - name: etcd-data
+          mountPath: /backup/etcd
+        - name: etcd-certs
+          mountPath: /etc/kubernetes/pki
+          readOnly: true

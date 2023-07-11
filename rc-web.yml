@@ -1,0 +1,22 @@
+apiVersion: "v1"
+kind: "ReplicationController"
+metadata:
+  name: "webserver-rc"
+  labels:
+    rc: "web"
+spec:
+  replicas: 1
+  selector:
+    app: "web"
+  template:
+    metadata:
+      labels:
+        app: "web"
+    spec:
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd:webapp"
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: myregkey

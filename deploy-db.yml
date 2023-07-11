@@ -1,0 +1,22 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "dbserver-deployment"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "db"
+  template:
+    metadata:
+      labels:
+        app: "db"
+    spec:
+      containers:
+      - name: "db-backend"
+        image: "eagle.example.com:5000/mysql"
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: redhat
+        ports:
+        - containerPort: 3306

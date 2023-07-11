@@ -1,0 +1,24 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "configmap-vol-deployment"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "cmap-vol"
+  template:
+    metadata:
+      labels:
+        app: "cmap-vol"
+    spec:
+      containers:
+      - name: "apache"
+        image: "eagle.example.com:5000/httpd"
+        volumeMounts:
+        - name: configvol
+          mountPath: /etc/config
+      volumes:
+        - name: configvol
+          configMap:
+            name: webby

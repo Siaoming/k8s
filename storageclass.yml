@@ -1,0 +1,26 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: gluster-container
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: kubernetes.io/glusterfs
+allowVolumeExpansion: true
+parameters:
+  resturl: "http://eagle.example.com:8888"
+  restuser: "admin"
+  volumetype: "replicate:2"
+  clusterid: "CLUSTER-ID"
+  secretNamespace: "kube-system"
+  secretName: "heketi-secret"
+
+---
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: heketi-secret
+  namespace: kube-system
+data:
+  key: cmVkaGF0
+type: kubernetes.io/glusterfs

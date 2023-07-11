@@ -1,0 +1,13 @@
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "web-service-ext"
+spec:
+  type: "ClusterIP"
+  ports:
+  - protocol: "TCP"
+    port: 80
+  selector:
+    app: "web"
+  externalIPs:
+  - 10.20.20.20

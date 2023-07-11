@@ -1,0 +1,53 @@
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "webserver"
+  labels:
+    app: "webserver"
+spec:
+  type: "NodePort"
+  ports:
+  - protocol: "TCP"
+    port: 80
+    nodePort: 31000
+  selector:
+    app: "webserver"
+
+---
+
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "webserver"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "webserver"
+  template:
+    metadata:
+      labels:
+        app: "webserver"
+    spec:
+      volumes:
+      - name: "webroot"
+        persistentVolumeClaim:
+          claimName: "webclaim"
+      initContainers:
+      - name: "checkmydb"
+        image: "eagle.example.com:5000/busybox"
+        command: ['sh','-c','until nslookup database-service;do sleep 1;done']
+      - name: "homepage"
+        image:  "eagle.example.com:5000/busybox"
+        command: ['sh','-c','echo $(hostname) > /prepare/index.html']
+        volumeMounts:
+        - mountPath: "/prepare"
+          name: "webroot"
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd:dns"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: "/var/www/html"
+          name: "webroot"

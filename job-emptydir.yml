@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: convert
+spec:
+  backoffLimit: 3
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - image: eagle.example.com:5000/centos
+        name: create-files
+        volumeMounts:
+        - mountPath: /cache
+          name: cache-volume
+        command:
+        - sh
+        - -c
+        - touch /cache/{1..30};touch /cache/trigger
+      - image: eagle.example.com:5000/centos
+        name: generate-logs
+        volumeMounts:
+        - mountPath: /logs
+          name: cache-volume
+        command:
+        - sh
+        - -c
+        - until test -f /logs/trigger;do sleep 1;done;find /logs/
+      volumes:
+      - name: cache-volume
+        emptyDir: {}
+#          medium: Memory
+#          sizeLimit: "10Mi"
+#          medium: HugePages-2Mi
+#          medium: HugePages-1Gi

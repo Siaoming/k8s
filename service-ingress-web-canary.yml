@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web1
+spec:
+  type: ClusterIP
+  ports:
+  - protocol: TCP
+    port: 80
+    name: http
+  selector:
+    app: web
+    version: v1
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web2
+spec:
+  type: ClusterIP
+  ports:
+  - protocol: TCP
+    port: 80
+    name: http
+  selector:
+    app: web
+    version: v2
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-web
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/service-web1: 90, web2: 10
+spec:
+  rules:
+  - host: web.example.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: web1
+          servicePort: http
+      - path: /
+        backend:
+          serviceName: web2
+          servicePort: http

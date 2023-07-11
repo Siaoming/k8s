@@ -1,0 +1,3526 @@
+{
+    "apiVersion": "v1",
+    "groupVersion": "custom.metrics.k8s.io/v1beta1",
+    "kind": "APIResourceList",
+    "resources": [
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_next_schedule_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_desired_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "services/kube_service_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_working_set_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_spec_paused",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_status_desired_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_completion_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/spec_memory_reservation_limit_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_failures",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_endpoint_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_spec_max_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_resource_requests_cpu_cores",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_owner",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_sector_reads",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/spec_cpu_period",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_spec_min_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_status_active",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_resource_limits",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_resource_requests_memory_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_swap",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_spec_suspend",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_status_active",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_status_start_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_status_scheduled",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_service_spec_type",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_container_log_filesystem_used_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_used_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_reads_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_terminated_reason",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_waiting_reason",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_resource_requests_cpu_cores",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_spec_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_spec_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_status_condition",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_service_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "services/kube_service_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_available_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/spec_memory_limit_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_inodes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_status_active",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_status_start_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_persistentvolumeclaim_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_persistentvolumeclaim_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_persistentvolumeclaim_resource_requests_storage_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_resource_requests_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_cache",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_status_ready",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/spec_memory_reservation_limit_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_endpoint_address_not_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_spec_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_mapped_file",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_status_last_schedule_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_status_replicas_available",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_status_observed_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "configmaps/kube_configmap_metadata_resource_version",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_status_current_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_spec_completions",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_status_ready_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_used_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_spec_paused",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_write",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_status_active",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_current_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_start_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/cpu_user",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/tasks_state",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_spec_suspend",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_number_misscheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_spec_completions",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_pod_spec_volumes_persistentvolumeclaims_readonly",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_status_scheduled_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_reads",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_inodes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_available_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_namespace_status_phase",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_service_spec_type",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_namespace_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_status_observed_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_available_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/cpu_usage",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_container_resource_limits",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_spec_volumes_persistentvolumeclaims_readonly",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_status_phase",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_io_current",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_number_misscheduled",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_persistentvolumeclaim_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_metadata_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_status_observed_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_secret_type",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_number_available",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_metadata_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_status_failed",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_container_log_filesystem_used_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_io_time_weighted",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_spec_strategy_rollingupdate_max_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_waiting_reason",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_max_usage_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_status_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_capacity_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/cpu_load_average_10s",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_spec_strategy_rollingupdate_max_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_status_replicas_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_status_ready_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_status_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/cpu_system",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_limit_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_current_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_status_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_endpoint_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_persistentvolumeclaim_status_phase",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_failures",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_spec_volumes_persistentvolumeclaims_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_owner",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_writes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/spec_cpu_shares",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/spec_memory_swap_limit_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_next_schedule_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_number_ready",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_terminated",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_spec_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_writes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_used_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/tasks_state",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_desired_number_scheduled",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_updated_number_scheduled",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_status_observed_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_spec_min_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_namespace_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_limit_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_inodes_used",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_persistentvolumeclaim_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_inodes_free",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kube_pod_spec_volumes_persistentvolumeclaims_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_secret_metadata_resource_version",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_inodes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_status_condition",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_status_fully_labeled_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_service_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_restarts",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_io_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_status_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "storageclasses.storage.k8s.io/kube_persistentvolumeclaim_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_waiting",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_waiting",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_spec_volumes_persistentvolumeclaims_readonly",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_spec_paused",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_number_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_updated_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_spec_strategy_rollingupdate_max_surge",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_status_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_read",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_status_scheduled_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_service_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_namespace_annotations",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_rss",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_rss",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/spec_memory_swap_limit_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/start_time_seconds",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_next_schedule_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_spec_strategy_rollingupdate_max_surge",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_failcnt",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_persistentvolumeclaim_resource_requests_storage_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_status_fully_labeled_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_endpoint_address_available",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_working_set_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_number_available",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_endpoint_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_metadata_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_persistentvolumeclaim_status_phase",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_terminated",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_writes_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_configmap_metadata_resource_version",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_updated_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_persistentvolumeclaim_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_status_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/spec_memory_limit_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_writes_merged",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_status_last_schedule_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_completion_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_resource_limits_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_container_resource_requests",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_status_ready_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_sector_reads",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "secrets/kube_secret_type",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_inodes_used",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_secret_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_number_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_spec_parallelism",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_status_succeeded",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_namespace_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_terminated",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_waiting_reason",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_reads",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_service_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_namespace_annotations",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_namespace_status_phase",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_metadata_generation",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_complete",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_secret_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_capacity_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_read",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_usage_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_usage_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_status_last_schedule_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_status_observed_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/cpu_load_average_10s",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_spec_volumes_persistentvolumeclaims_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/start_time_seconds",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_desired_number_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "secrets/kube_secret_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_usage_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_resource_requests_cpu_cores",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_spec_suspend",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_spec_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_status_replicas_updated",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_hpa_status_desired_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_status_completion_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_resource_limits",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_resource_limits_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_number_misscheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_start_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_status_replicas_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_status_succeeded",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_persistentvolumeclaim_status_phase",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/last_seen",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/spec_cpu_shares",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_configmap_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_spec_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_io_current",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_persistentvolumeclaim_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_spec_volumes_persistentvolumeclaims_readonly",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_replicaset_status_fully_labeled_replicas",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_secret_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_configmap_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_completion_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_terminated_reason",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "secrets/kube_secret_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_write",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_number_unavailable",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_ready",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_owner",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_secret_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/spec_cpu_period",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_status_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_reads_merged",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/last_seen",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_status_observed_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_status_failed",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "secrets/kube_secret_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kubelet_container_log_filesystem_used_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_inodes_free",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_restarts",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_reads_merged",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_ready",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "services/kube_service_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_writes_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_sector_writes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_daemonset_status_current_number_scheduled",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_status_replicas_available",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_running",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_io_time_weighted",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_number_available",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_restarts",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_cronjob_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_inodes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_configmap_metadata_resource_version",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_status_number_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_persistentvolumeclaim_resource_requests_storage_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_status_terminated_reason",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_waiting",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/cpu_usage",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_status_replicas_updated",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_resource_limits",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_capacity_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_inodes_free",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_status_replicas_unavailable",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_resource_requests_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_status_scheduled",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_secret_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_secret_type",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/cpu_user",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_job_spec_parallelism",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/fs_writes_merged",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_status_completion_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_container_resource_requests_cpu_cores",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_secret_metadata_resource_version",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_inodes_used",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_configmap_created",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_spec_strategy_rollingupdate_max_surge",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_spec_strategy_rollingupdate_max_unavailable",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "persistentvolumeclaims/kubelet_volume_stats_inodes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_failcnt",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "configmaps/kube_configmap_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_cronjob_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_status_replicas_available",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_endpoint_address_not_ready",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_endpoint_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_resource_requests",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_status_running",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_max_usage_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_secret_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "services/kube_service_spec_type",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_status_phase",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "configmaps/kube_configmap_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "daemonsets.extensions/kube_daemonset_status_number_unavailable",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "deployments.extensions/kube_deployment_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_container_resource_limits_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_reads_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_deployment_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_status_replicas_updated",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_endpoint_address_available",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_endpoint_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_status_current_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_status_phase",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/memory_swap",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kubelet_volume_stats_inodes_free",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_job_complete",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_replicaset_status_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "cronjobs.batch/kube_cronjob_status_active",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_sector_writes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_configmap_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_daemonset_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_spec_volumes_persistentvolumeclaims_info",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/cpu_system",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_cache",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_mapped_file",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_endpoint_created",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_hpa_spec_max_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_namespace_labels",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_resource_limits_memory_bytes",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_container_resource_requests",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/fs_io_time",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_pod_container_status_running",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_status_scheduled_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "replicasets.extensions/kube_replicaset_status_replicas",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_service_info",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kube_pod_container_resource_requests",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_deployment_metadata_generation",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "nodes/kube_pod_container_resource_requests_memory_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/kube_pod_start_time",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "secrets/kube_secret_metadata_resource_version",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "jobs.batch/kube_service_labels",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "namespaces/kubelet_volume_stats_inodes_free",
+            "namespaced": false,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        },
+        {
+            "kind": "MetricValueList",
+            "name": "pods/memory_usage_bytes",
+            "namespaced": true,
+            "singularName": "",
+            "verbs": [
+                "get"
+            ]
+        }
+    ]
+}

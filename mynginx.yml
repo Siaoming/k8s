@@ -1,0 +1,13 @@
+apiVersion: demo.example.com/v1alpha1
+kind: Nginx
+metadata:
+  name: mynginx
+spec:
+  image:
+    pullPolicy: IfNotPresent
+    repository: eagle.example.com:5000/httpd
+    tag: "latest"
+  replicaCount: 3
+  service:
+    port: 80
+    type: LoadBalancer

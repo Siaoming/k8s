@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-default-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ingress-default-backend
+  template:
+    metadata:
+      labels:
+        app: ingress-default-backend
+    spec:
+      containers:
+      - name: ingress-default-backend
+        image: eagle.example.com:5000/httpd

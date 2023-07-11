@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: webclaim
+spec:
+#  storageClassName: gluster-container
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi

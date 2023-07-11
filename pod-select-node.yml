@@ -1,0 +1,16 @@
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "select-node"
+  labels:
+    app: "test"
+spec:
+#  nodeSelector:
+#    kubernetes.io/hostname: "WHAT.example.com"
+  containers:
+  - image: eagle.example.com:5000/centos
+    name: centos
+    command:
+    - sh
+    - -c
+    - sleep infinity

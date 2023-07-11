@@ -1,0 +1,13 @@
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "webserver"
+  labels:
+    app: "web"
+spec:
+  containers:
+  - name: "apache-frontend"
+    image: "eagle.example.com:5000/httpd:dns"
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 80

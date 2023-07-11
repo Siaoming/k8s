@@ -1,0 +1,26 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "webserver"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "web"
+  template:
+    metadata:
+      labels:
+        app: "web"
+    spec:
+      volumes:
+      - name: "webroot"
+        persistentVolumeClaim:
+          claimName: "webclaim"
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd:dns"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: "/var/www/html"
+          name: "webroot"

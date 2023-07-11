@@ -1,0 +1,21 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "webserver-nad"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "web-nad"
+  template:
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: macvlan-dynamic@eth1
+      labels:
+        app: "web-nad"
+    spec:
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd"
+        ports:
+        - containerPort: 80
