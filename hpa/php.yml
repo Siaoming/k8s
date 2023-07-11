@@ -1,0 +1,62 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "php"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "php"
+  template:
+    metadata:
+      labels:
+        app: "php"
+    spec:
+      containers:
+      - name: "phpapp"
+        image: "eagle.example.com:5000/httpd:php"
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 200m
+#            memory: 256Mi
+
+---
+
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "php"
+spec:
+  ports:
+  - name: "http"
+    protocol: "TCP"
+    port: 80
+  selector:
+    app: "php"
+
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  name: php
+spec:
+  rules:
+  - host: php.example.com
+    http:
+      paths:
+      - path: /
+        backend:
+          service:
+            name: php
+            port:
+              name: http
+        pathType: ImplementationSpecific
+  tls:
+  - secretName: php
+    hosts:
+    - php.example.com

@@ -1,0 +1,12 @@
+- seriesQuery: '{__name__= "myapp_client_connected"}'
+  seriesFilters: []
+  resources:
+    overrides:
+      k8s_namespace:
+        resource: namespace
+      k8s_pod_name:
+        resource: pod
+  name:
+    matches: "myapp_client_connected"
+    as: ""
+  metricsQuery: <<.Series>>{<<.LabelMatchers>>,container_name!="POD"}

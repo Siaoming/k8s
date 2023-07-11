@@ -1,0 +1,42 @@
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "webserver"
+  labels:
+    app: "webserver-ceph"
+spec:
+  type: "LoadBalancer"
+  ports:
+  - protocol: "TCP"
+    port: 80
+  selector:
+    app: "webserver-ceph"
+
+---
+
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "webserver-ceph"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "webserver-ceph"
+  template:
+    metadata:
+      labels:
+        app: "webserver-ceph"
+    spec:
+      volumes:
+      - name: "webroot"
+        persistentVolumeClaim:
+          claimName: "pvc-ceph"
+      containers:
+      - name: "apache-frontend"
+        image: "eagle.example.com:5000/httpd:dns"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: "/var/www/html"
+          name: "webroot"

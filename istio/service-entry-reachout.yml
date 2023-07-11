@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: reachout
+spec:
+  hosts:
+  - nothing.local # not used
+  addresses:
+  - 10.10.10.1
+  ports:
+  - number: 80
+    name: http-port
+    protocol: HTTP
+  - number: 443
+    name: https
+    protocol: HTTPS
+  resolution: STATIC

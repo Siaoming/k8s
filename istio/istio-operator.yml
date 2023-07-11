@@ -1,0 +1,10 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  profile: demo
+  #hub: docker.io/istio
+  #tag: 1.7.4
+  #meshConfig:
+  values:
+    global:
+      imagePullPolicy: IfNotPresent

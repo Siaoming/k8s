@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: metrics
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: metrics
+  minReplicas: 3
+  maxReplicas: 6
+  metrics:
+  - type: Pods
+    pods:
+      metricName: myapp_client_connected
+      targetAverageValue: 10

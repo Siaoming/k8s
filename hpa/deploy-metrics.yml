@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metrics
+  labels:
+    app: metrics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: metrics
+  template:
+    metadata:
+      labels:
+        app: metrics
+    spec:
+      containers:
+      - name: metrics-app
+        image: eagle.example.com:5000/metrics:0.1
+        env:
+          - name: LISTENING_PORT
+            value: "8080"

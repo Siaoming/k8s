@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: strategy
+spec:
+  selector:
+# To select services that have strategy label
+    matchExpressions:
+    - { key: strategy, operator: Exists }
+  endpoints:
+  - port: http-metrics
+    interval: 15s
