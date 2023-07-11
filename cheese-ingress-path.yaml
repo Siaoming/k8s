@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cheeses
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.rule.type: PathPrefixStrip
+spec:
+  rules:
+  - host: cheese.example.com
+    http:
+      paths:
+      - path: /s/
+        backend:
+          service:
+            name: stilton
+            port:
+              name: http
+        pathType: ImplementationSpecific
+      - path: /c/
+        backend:
+          service:
+            name: cheddar
+            port:
+              name: http
+        pathType: ImplementationSpecific
+      - path: /w/
+        backend:
+          service:
+            name: wensleydale
+            port:
+              name: http
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - cheese.example.com
+    secretName: cheese-tls

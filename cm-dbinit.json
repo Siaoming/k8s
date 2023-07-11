@@ -1,0 +1,10 @@
+{
+    "apiVersion": "v1",
+    "data": {
+        "init.sql": "--\n-- Dumping data for table `user`\n--\nUSE `mysql`;\n\nLOCK TABLES `user` WRITE;\n/*!40000 ALTER TABLE `user` DISABLE KEYS */;\nINSERT INTO `user` VALUES ('%','john','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'sha256_password','$5$\u003e\u0008\u001b\u000e\u000f\u001dzH\\'^i5mBO\u0014\u003e%mS$0weYT9zZrCHXx/0epr6dLv18EIg8p9f.AlTgMLG0Jq/','N','2019-04-29 11:17:03',NULL,'N'),('%','james','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'sha256_password','$5$^\u0010V\\'\\r*ka]\u0014a\u001f9\u0026\u001eNP0\u000b\u0015$Ua5bGB2zqVTCurmhXU4vm8Ind6LXsogKyQmyAo25do.','N','2019-04-29 11:17:47',NULL,'N'),('%','peter','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'sha256_password','$5$\\\\\\Z\u0005}\u003c]9tn\u0007e%O}-\\Z\u0016\u0006tx$NEfytjugGdKD5MIVXPtjImp0FrnRY.ltlLReKxMMgBC','N','2019-04-29 11:17:58',NULL,'N'),('%','siaoming','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0,'sha256_password','$5$0}\u0007:/\\r \u001b\u0004A-R4`\u001cL.;\u0026$7fcaLXYWmDQJ3yV9XxjMx3.CWz6q9Y74fv.IcGTjPJ9','N','2019-04-29 11:18:18',NULL,'N');\n/*!40000 ALTER TABLE `user` ENABLE KEYS */;\nUNLOCK TABLES;\n"
+    },
+    "kind": "ConfigMap",
+    "metadata": {
+        "name": "dbinit"
+    }
+}

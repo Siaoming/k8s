@@ -1,0 +1,7 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: bgppeer-bcf
+spec:
+  peerIP: 2.2.2.2
+  asNumber: 63400

@@ -1,0 +1,23 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "configmap-deployment"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "cmap"
+  template:
+    metadata:
+      labels:
+        app: "cmap"
+    spec:
+      containers:
+      - name: "apache"
+        image: "eagle.example.com:5000/httpd"
+        env:
+          - name: LISTEN
+            valueFrom:
+              configMapKeyRef:
+                name: webby
+                key: listen
